@@ -430,6 +430,7 @@
 				z-index: 1;
 			}
 			.hill-section .wave path { fill: var(--bg); }
+			body.baby .hill-section strong { color: inherit; }
 			.hill-section .section-inner { position: relative; z-index: 3; max-width: 44rem; margin: 0 auto; }
 
 			/* Light to dark down the page; text alternates dark / white / dark */
@@ -470,7 +471,7 @@
 				border-right: 1px solid var(--rule);
 			}
 			body.baby .date-block .when { font-size: 1.15rem; line-height: 1.6; }
-			.date-block .when strong { display: block; font-weight: 700; font-size: 1.3rem; letter-spacing: 0.03em; }
+			.date-block .when strong { color: inherit; display: block; font-weight: 700; font-size: 1.3rem; letter-spacing: 0.03em; }
 			.actions { margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; text-shadow: none; }
 
 			/* Buttons on the light hill use the dark ink instead of white */
@@ -594,7 +595,6 @@
 						<div class="qr-card">
 							<div id="qrcode" role="img" aria-label="QR code linking to the gift registry"></div>
 						</div>
-						<p class="registry-caption">Scan to view our registry</p>
 						<a class="btn ghost" id="registry-link" href="#" target="_blank" rel="noopener">Registry</a>
 					</div>
 				</div>
@@ -611,7 +611,7 @@
 				const REGISTRY_URL = "https://tinyurl.com/8fk75h7k";
 
 				// 2. Web app URL from the NEW Google Apps Script (see rsvp-apps-script.gs).
-				const SCRIPT_URL = "PASTE_YOUR_NEW_APPS_SCRIPT_WEB_APP_URL_HERE";
+				const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzACLO5j9vzcIiEe5XmnycflctdmD5adErjehadwCtkFzsXTb0hDmZZyHEi5O59BpLJhw/exec";
 
 				// 3. Address used for the map, directions, and calendar entry.
 				const MAP_QUERY = "Orchards Club House, 4059 Orchards Drive SW, Edmonton, AB";
