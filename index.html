@@ -344,35 +344,7 @@
 			body.baby #signup-form input[type="text"], body.baby #signup-form input[type="submit"] { margin: 0 !important; }
 			body.baby #signup-form input[type="text"] { order: 1; }
 			body.baby #signup-form input[type="submit"] { order: 2; }
-			body.baby #signup-form .plus-one { order: 3; }
 			body.baby #form-status { order: 4; }
-			body.baby #signup-form .plus-one {
-				flex: 1 1 100%;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				margin: 0;
-				font-size: 0.95rem;
-				font-weight: 400;
-				letter-spacing: 0.02em;
-				text-transform: none;
-				text-shadow: 0 1px 8px rgba(70,50,90,0.3);
-				cursor: pointer;
-			}
-			body.baby #signup-form .plus-one input[type="checkbox"] {
-				-webkit-appearance: checkbox;
-				appearance: auto;
-				position: static;
-				float: none;
-				display: inline-block;
-				opacity: 1;
-				z-index: auto;
-				width: 1.15rem;
-				height: 1.15rem;
-				margin: 0 0.6rem 0 0;
-				accent-color: #ffffff;
-				cursor: pointer;
-			}
 			body.baby #signup-form input[type="submit"] {
 				flex: 0 0 auto;
 				width: auto;
@@ -591,6 +563,7 @@
 						<div class="qr-card">
 							<div id="qrcode" role="img" aria-label="QR code linking to the gift registry"></div>
 						</div>
+						<p class="registry-caption">Scan to view our registry</p>
 						<a class="btn ghost" id="registry-link" href="#" target="_blank" rel="noopener">Registry</a>
 					</div>
 				</div>
@@ -607,7 +580,7 @@
 				const REGISTRY_URL = "https://tinyurl.com/8fk75h7k";
 
 				// 2. Web app URL from the NEW Google Apps Script (see rsvp-apps-script.gs).
-				const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzACLO5j9vzcIiEe5XmnycflctdmD5adErjehadwCtkFzsXTb0hDmZZyHEi5O59BpLJhw/exec";
+				const SCRIPT_URL = "PASTE_YOUR_NEW_APPS_SCRIPT_WEB_APP_URL_HERE";
 
 				// 3. Address used for the map, directions, and calendar entry.
 				const MAP_QUERY = "Orchards Club House, 4059 Orchards Drive SW, Edmonton, AB";
@@ -650,7 +623,6 @@
 
 					const payload = {
 						name:    document.getElementById("name").value.trim(),
-						plusOne: document.getElementById("plusOne").checked,
 					};
 
 					try {
