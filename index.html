@@ -1,0 +1,675 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Co-ed Baby Shower | November 22nd</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Please join us for a co-ed baby shower on November 22nd, 3:00 - 5:00 PM at the Orchards Club House." />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* ---------- Theme ---------- */
+			:root {
+				--dusk-rose: #bf839a;
+				--dusk-mauve: #a38cb6;
+				--dusk-periwinkle: #8a92c4;
+				--dusk-haze: #7c80b0;
+				--hill-1: #9d9bc4;
+				--hill-2: #858299;
+				--hill-3: #6e6d86;
+				--hill-4: #5b5b75;
+				--ink: #3f3f5c;
+				--white: #ffffff;
+				--white-soft: rgba(255,255,255,0.86);
+				--line: rgba(255,255,255,0.7);
+				--font-display: "Noto Serif", Georgia, "Times New Roman", serif;
+				--font-body: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+				--w1: 7rem; --w2: 8rem; --w3: 6rem; --w4: 3rem; /* heights of each hill edge */
+			}
+
+			/* Page base. Prefixed with body.baby so it wins over assets/css/main.css. */
+			html { scroll-behavior: smooth; }
+			body.baby {
+				display: block;
+				height: auto;
+				min-height: 100vh;
+				padding: 0 !important;
+				margin: 0;
+				background: #404058;
+				color: var(--white);
+				font-family: var(--font-body);
+				font-weight: 400;
+				font-size: 1.05rem;
+				line-height: 1.7;
+				letter-spacing: normal;
+				text-transform: none;
+				-webkit-font-smoothing: antialiased;
+			}
+			body.baby *, body.baby *::before, body.baby *::after { box-sizing: border-box; }
+			/* Hide the template's rotating background images */
+			body.baby #bg { display: none !important; }
+			body.baby a { border-bottom: 0; text-decoration: none; color: inherit; }
+			body.baby h1, body.baby h2, body.baby p { margin: 0; letter-spacing: normal; text-transform: none; }
+			body.baby :focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+			.sr-only {
+				position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+				overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+			}
+
+			/* ---------- First screen: invitation + sign up ---------- */
+			.hero {
+				--h1-size: clamp(3.6rem, min(17vh, 13vw), 12rem);
+				--line-size: clamp(1.05rem, 2.7vh, 1.7rem);
+				position: relative;
+				overflow: hidden;
+				min-height: calc(100vh + var(--w1));
+				min-height: calc(100svh + var(--w1));
+				padding: 3rem 2rem calc(var(--w1) + 4rem);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				text-align: center;
+				background: linear-gradient(180deg,
+					var(--dusk-rose) 0%,
+					var(--dusk-mauve) 36%,
+					var(--dusk-periwinkle) 68%,
+					var(--dusk-haze) 100%);
+			}
+			/* The thin white frame from the invitation */
+			.hero::before {
+				content: "";
+				position: absolute;
+				top: 2.5rem; right: 2.5rem; bottom: calc(var(--w1) + 2.5rem); left: 2.5rem;
+				border: 1px solid var(--line);
+				pointer-events: none;
+				z-index: 2;
+			}
+			/* Night sky: tiny faint stars, a few brighter ones, denser at the top and
+			   fading out toward the bottom of the first screen. */
+			.sky {
+				position: absolute;
+				top: 0; left: 0; right: 0;
+				height: 100vh;
+				height: 100svh;
+				pointer-events: none;
+				-webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 35%, transparent 90%);
+				mask-image: linear-gradient(to bottom, #000 0%, #000 35%, transparent 90%);
+			}
+			.stars {
+				position: absolute;
+				top: 0; left: 0;
+				width: 1px; height: 1px;
+				border-radius: 50%;
+				background: transparent;
+				box-shadow:
+					32.49vw 6.44vh 0px 0px rgba(255,255,255,0.33), 36.65vw 1.61vh 0px 0px rgba(255,255,255,0.31), 7.24vw 3.08vh 0px 0px rgba(255,255,255,0.63),
+					22.49vw 50.87vh 0px 0.5px rgba(255,255,255,0.72), 97.34vw 1.17vh 0px 0.5px rgba(255,255,255,0.64), 12.01vw 18.17vh 0px 0px rgba(255,255,255,0.37),
+					63.81vw 23.88vh 0px 0px rgba(255,255,255,0.33), 20.77vw 57.21vh 0px 0px rgba(255,255,255,0.43), 45.35vw 17.43vh 0px 0px rgba(255,255,255,0.58),
+					57.4vw 39.31vh 0px 0.5px rgba(255,255,255,0.77), 97.73vw 4.51vh 0px 0px rgba(255,255,255,0.60), 48.9vw 0.91vh 0px 0px rgba(255,255,255,0.61),
+					87.32vw 18.62vh 0px 0px rgba(255,255,255,0.54), 45.65vw 77.66vh 0px 0.5px rgba(255,236,220,0.69), 6.33vw 59.8vh 0px 0px rgba(220,232,255,0.70),
+					28.59vw 25.13vh 0px 0px rgba(255,255,255,0.31), 17.0vw 4.46vh 0px 0px rgba(255,255,255,0.61), 24.91vw 25.62vh 0px 0.5px rgba(255,255,255,0.57),
+					54.91vw 83.54vh 0px 0px rgba(255,255,255,0.65), 41.58vw 22.62vh 0px 0.5px rgba(255,255,255,0.84), 17.82vw 12.02vh 0px 0px rgba(255,255,255,0.49),
+					26.42vw 0.03vh 0px 0px rgba(255,255,255,0.45), 95.04vw 58.45vh 0px 0px rgba(255,236,220,0.55), 5.67vw 85.77vh 0px 0px rgba(255,236,220,0.65),
+					39.3vw 26.39vh 0px 0px rgba(255,255,255,0.55), 6.99vw 10.32vh 0px 0px rgba(255,255,255,0.44), 0.32vw 6.47vh 0px 0px rgba(255,255,255,0.45),
+					87.21vw 49.31vh 0px 0px rgba(255,255,255,0.40), 36.5vw 4.78vh 0px 0.5px rgba(255,255,255,0.85), 48.39vw 2.85vh 0px 0px rgba(255,255,255,0.44),
+					82.69vw 7.11vh 0px 0px rgba(255,255,255,0.68), 14.87vw 41.27vh 0px 0px rgba(220,232,255,0.51), 86.11vw 59.15vh 0px 0px rgba(255,255,255,0.45),
+					77.03vw 40.11vh 0px 0px rgba(255,255,255,0.43), 80.96vw 97.82vh 0px 0.5px rgba(220,232,255,0.79), 73.84vw 11.63vh 0px 0px rgba(255,255,255,0.44),
+					3.08vw 15.74vh 0px 0px rgba(220,232,255,0.58), 44.75vw 91.0vh 0px 0.5px rgba(255,255,255,0.84), 22.21vw 11.64vh 0px 0px rgba(255,236,220,0.38),
+					89.79vw 77.72vh 0px 0px rgba(255,236,220,0.56), 8.73vw 54.81vh 0px 0.5px rgba(255,236,220,0.78), 47.82vw 8.22vh 0px 0px rgba(220,232,255,0.43),
+					96.88vw 26.09vh 0px 0px rgba(255,236,220,0.68), 17.2vw 5.02vh 0px 0px rgba(220,232,255,0.66), 14.83vw 75.86vh 0px 0.5px rgba(255,255,255,0.75),
+					54.84vw 5.25vh 0px 0px rgba(255,236,220,0.69), 52.64vw 90.52vh 0px 0px rgba(220,232,255,0.65), 21.28vw 13.54vh 0px 0px rgba(255,255,255,0.40),
+					26.08vw 28.33vh 0px 0px rgba(255,255,255,0.66), 45.84vw 45.77vh 0px 0.5px rgba(220,232,255,0.68), 50.16vw 40.03vh 0px 0px rgba(255,255,255,0.31),
+					18.5vw 0.03vh 0px 0px rgba(255,255,255,0.37), 72.38vw 42.75vh 0px 0px rgba(255,255,255,0.51), 78.26vw 3.87vh 0px 0px rgba(255,255,255,0.40),
+					77.06vw 37.42vh 0px 0px rgba(220,232,255,0.60), 44.36vw 49.13vh 0px 0px rgba(255,236,220,0.50), 45.26vw 40.19vh 0px 0px rgba(255,236,220,0.68),
+					87.43vw 91.73vh 0px 0px rgba(220,232,255,0.52), 83.8vw 5.61vh 0px 0px rgba(255,255,255,0.48), 24.22vw 2.25vh 0px 0px rgba(220,232,255,0.61),
+					15.65vw 61.62vh 0px 0px rgba(220,232,255,0.36), 96.47vw 11.1vh 0px 0.5px rgba(255,255,255,0.67), 98.69vw 76.65vh 0px 0px rgba(255,255,255,0.47),
+					34.01vw 9.4vh 0px 0px rgba(255,255,255,0.59), 55.37vw 30.46vh 0px 0px rgba(255,236,220,0.43), 51.22vw 1.87vh 0px 0.5px rgba(220,232,255,0.79),
+					10.72vw 14.62vh 0px 0px rgba(255,255,255,0.61), 13.18vw 28.65vh 0px 0.5px rgba(255,255,255,0.80), 15.15vw 88.5vh 0px 0px rgba(255,255,255,0.58),
+					6.02vw 58.17vh 0px 0px rgba(220,232,255,0.33), 63.36vw 72.57vh 0px 0px rgba(255,255,255,0.64), 86.06vw 31.8vh 0px 0px rgba(220,232,255,0.52),
+					26.93vw 5.15vh 0px 0px rgba(255,255,255,0.40), 16.35vw 1.31vh 0px 0px rgba(255,255,255,0.42), 75.79vw 16.61vh 0px 0px rgba(255,255,255,0.37),
+					2.11vw 13.43vh 0px 0px rgba(255,255,255,0.59), 19.13vw 33.95vh 0px 0.5px rgba(220,232,255,0.58), 43.26vw 36.07vh 0px 0.5px rgba(255,255,255,0.67),
+					68.66vw 97.46vh 0px 0px rgba(255,236,220,0.63), 63.52vw 26.94vh 0px 0px rgba(255,255,255,0.32), 7.33vw 64.74vh 0px 0px rgba(255,255,255,0.37),
+					83.92vw 81.79vh 0px 0px rgba(255,255,255,0.41), 29.43vw 32.38vh 0px 0px rgba(255,255,255,0.48), 95.9vw 96.05vh 0px 0px rgba(220,232,255,0.40),
+					31.07vw 22.42vh 0px 0px rgba(255,255,255,0.45), 50.27vw 9.76vh 0px 0px rgba(255,255,255,0.30), 9.22vw 26.44vh 0px 0px rgba(255,255,255,0.31),
+					23.44vw 46.03vh 0px 0px rgba(255,236,220,0.60), 71.47vw 82.96vh 0px 0px rgba(220,232,255,0.43), 15.16vw 62.63vh 0px 0px rgba(220,232,255,0.32),
+					88.96vw 50.86vh 0px 0px rgba(255,255,255,0.62), 52.36vw 37.07vh 0px 0.5px rgba(220,232,255,0.79), 58.36vw 84.84vh 0px 0px rgba(255,255,255,0.58),
+					3.4vw 5.37vh 0px 0px rgba(220,232,255,0.34), 55.82vw 50.91vh 0px 0px rgba(255,255,255,0.57), 0.63vw 72.06vh 0px 0px rgba(255,255,255,0.50),
+					65.83vw 1.94vh 0px 0px rgba(255,255,255,0.40), 26.7vw 63.28vh 0px 0px rgba(220,232,255,0.60), 49.4vw 24.83vh 0px 0px rgba(255,236,220,0.57),
+					61.63vw 52.68vh 0px 0px rgba(255,255,255,0.36), 74.18vw 17.83vh 0px 0px rgba(255,255,255,0.30), 27.02vw 56.19vh 0px 0px rgba(255,255,255,0.57),
+					51.64vw 32.91vh 0px 0px rgba(220,232,255,0.35), 20.11vw 96.84vh 0px 0.5px rgba(255,255,255,0.56), 81.8vw 95.41vh 0px 0px rgba(255,255,255,0.41),
+					94.29vw 10.46vh 0px 0px rgba(255,255,255,0.36), 95.0vw 5.34vh 0px 0.5px rgba(220,232,255,0.70), 70.21vw 11.98vh 0px 0.5px rgba(255,255,255,0.70),
+					0.66vw 35.72vh 0px 0px rgba(255,255,255,0.42), 34.49vw 18.82vh 0px 0.5px rgba(255,236,220,0.55), 83.71vw 4.62vh 0px 0.5px rgba(220,232,255,0.76),
+					29.11vw 23.86vh 0px 0px rgba(255,255,255,0.70), 36.15vw 29.22vh 0px 0px rgba(255,255,255,0.32), 83.27vw 16.25vh 0px 0.5px rgba(255,255,255,0.62),
+					51.09vw 8.99vh 0px 0px rgba(220,232,255,0.68), 81.01vw 51.28vh 0px 0.5px rgba(255,255,255,0.83), 71.83vw 1.28vh 0px 0px rgba(255,236,220,0.48),
+					64.36vw 16.3vh 0px 0px rgba(255,255,255,0.67), 47.24vw 21.25vh 0px 0px rgba(220,232,255,0.60), 26.16vw 54.26vh 0px 0px rgba(255,255,255,0.52),
+					16.93vw 7.12vh 0px 0px rgba(255,255,255,0.66), 22.17vw 86.7vh 0px 0.5px rgba(255,255,255,0.68), 19.43vw 3.08vh 0px 0px rgba(255,255,255,0.34),
+					25.98vw 44.22vh 0px 0.5px rgba(255,255,255,0.77), 41.44vw 39.2vh 0px 0px rgba(255,255,255,0.44), 27.89vw 95.35vh 0px 0px rgba(255,236,220,0.50),
+					86.07vw 10.84vh 0px 0px rgba(255,255,255,0.40), 44.62vw 93.39vh 0px 0.5px rgba(255,255,255,0.81), 3.51vw 60.8vh 0px 0.5px rgba(255,255,255,0.69),
+					0.32vw 25.67vh 0px 0.5px rgba(220,232,255,0.80), 96.94vw 13.28vh 0px 0px rgba(255,255,255,0.36), 68.1vw 91.63vh 0px 0px rgba(255,236,220,0.56),
+					45.76vw 42.19vh 0px 0px rgba(255,255,255,0.61), 91.74vw 53.01vh 0px 0px rgba(255,255,255,0.35), 63.55vw 59.44vh 0px 0px rgba(255,255,255,0.33),
+					58.24vw 25.35vh 0px 0px rgba(255,255,255,0.54), 30.27vw 32.5vh 0px 0.5px rgba(220,232,255,0.74), 47.55vw 12.23vh 0px 0px rgba(255,236,220,0.68),
+					30.86vw 0.39vh 0px 0px rgba(255,255,255,0.57), 25.87vw 55.63vh 0px 0.5px rgba(255,255,255,0.62), 33.9vw 28.48vh 0px 0px rgba(255,236,220,0.38),
+					73.77vw 37.12vh 0px 0px rgba(255,255,255,0.69), 81.81vw 11.93vh 0px 0px rgba(255,255,255,0.60), 94.92vw 36.15vh 0px 0px rgba(255,255,255,0.39),
+					66.43vw 92.66vh 0px 0px rgba(255,255,255,0.46), 97.13vw 5.89vh 0px 0px rgba(255,255,255,0.32), 89.58vw 83.57vh 0px 0px rgba(220,232,255,0.70),
+					33.03vw 8.69vh 0px 0.5px rgba(255,255,255,0.77), 66.34vw 24.46vh 0px 0px rgba(255,255,255,0.43), 0.59vw 15.77vh 0px 0px rgba(255,255,255,0.68),
+					96.15vw 10.22vh 0px 0px rgba(220,232,255,0.63), 43.29vw 1.27vh 0px 0px rgba(220,232,255,0.45), 19.49vw 23.12vh 0px 0.5px rgba(255,255,255,0.56),
+					81.0vw 68.03vh 0px 0px rgba(255,255,255,0.31), 91.76vw 13.95vh 0px 0px rgba(255,255,255,0.66), 27.37vw 93.92vh 0px 0px rgba(255,236,220,0.40),
+					31.76vw 15.43vh 0px 0px rgba(220,232,255,0.60), 63.32vw 91.88vh 0px 0px rgba(255,255,255,0.39), 95.4vw 93.39vh 0px 0px rgba(255,255,255,0.40),
+					49.35vw 89.75vh 0px 0px rgba(255,236,220,0.62), 82.08vw 68.82vh 0px 0px rgba(255,255,255,0.43), 36.27vw 70.04vh 0px 0px rgba(255,236,220,0.38),
+					24.88vw 1.89vh 0px 0px rgba(255,255,255,0.52), 97.74vw 83.56vh 0px 0.5px rgba(255,255,255,0.63), 9.88vw 36.44vh 0px 0px rgba(255,255,255,0.48),
+					41.73vw 50.04vh 0px 0px rgba(220,232,255,0.60), 66.34vw 4.69vh 0px 0.5px rgba(255,255,255,0.64), 37.37vw 64.38vh 0px 0px rgba(255,255,255,0.40),
+					15.54vw 83.65vh 0px 0px rgba(255,255,255,0.43), 98.95vw 37.38vh 0px 0px rgba(255,236,220,0.62), 98.8vw 3.67vh 0px 0px rgba(220,232,255,0.63),
+					91.19vw 0.95vh 0px 0px rgba(255,255,255,0.35), 97.01vw 45.75vh 0px 0.5px rgba(220,232,255,0.66), 44.94vw 14.18vh 0px 0px rgba(255,255,255,0.68),
+					59.56vw 49.99vh 0px 0px rgba(255,255,255,0.45), 20.58vw 13.78vh 0px 0px rgba(255,255,255,0.56), 1.43vw 19.8vh 0px 0px rgba(255,255,255,0.37),
+					20.52vw 71.74vh 0px 0px rgba(255,255,255,0.33), 39.59vw 42.04vh 0px 0px rgba(255,255,255,0.34), 69.42vw 27.43vh 0px 0px rgba(220,232,255,0.42),
+					31.35vw 43.87vh 0px 0px rgba(220,232,255,0.47), 99.36vw 23.08vh 0px 0px rgba(255,255,255,0.59), 0.88vw 86.06vh 0px 0px rgba(255,255,255,0.63),
+					88.05vw 32.53vh 0px 0px rgba(255,255,255,0.31), 63.98vw 87.19vh 0px 0px rgba(255,255,255,0.55), 50.44vw 6.14vh 0px 0px rgba(220,232,255,0.51),
+					11.11vw 35.6vh 0px 0px rgba(255,255,255,0.69), 12.89vw 91.85vh 0px 0.5px rgba(255,255,255,0.69), 92.36vw 25.33vh 0px 0.5px rgba(220,232,255,0.74),
+					16.23vw 70.51vh 0px 0px rgba(220,232,255,0.46), 82.72vw 8.52vh 0px 0px rgba(255,255,255,0.46), 38.43vw 4.79vh 0px 0px rgba(220,232,255,0.59),
+					4.39vw 43.4vh 0px 0px rgba(220,232,255,0.32), 12.0vw 47.62vh 0px 0px rgba(255,255,255,0.55), 42.06vw 45.69vh 0px 0px rgba(255,255,255,0.56),
+					43.87vw 0.43vh 0px 0px rgba(255,255,255,0.50), 76.2vw 69.75vh 0px 0px rgba(255,255,255,0.37), 10.94vw 5.1vh 0px 0px rgba(255,255,255,0.34),
+					51.01vw 0.97vh 0px 0px rgba(255,236,220,0.33), 77.6vw 37.83vh 0px 0px rgba(255,255,255,0.50);
+			}
+			.stars.twinkle-a {
+				box-shadow:
+					94.82vw 5.55vh 2px 1px rgba(255,236,220,1.00), 81.31vw 9.25vh 2px 1px rgba(220,232,255,0.92), 91.35vw 7.34vh 2px 1px rgba(255,255,255,0.99),
+					35.18vw 66.68vh 0px 0.5px rgba(255,255,255,0.93), 81.37vw 5.99vh 0px 0.5px rgba(255,255,255,0.93), 26.43vw 37.24vh 0px 0.5px rgba(255,255,255,0.76),
+					16.33vw 90.91vh 0px 0.5px rgba(255,255,255,0.93), 78.32vw 4.35vh 0px 0.5px rgba(255,255,255,0.88), 87.07vw 42.6vh 0px 0.5px rgba(255,255,255,0.93),
+					99.0vw 51.15vh 0px 0.5px rgba(255,255,255,0.91), 98.76vw 45.09vh 0px 0.5px rgba(255,255,255,0.90), 17.87vw 65.08vh 0px 0.5px rgba(255,255,255,0.91),
+					63.84vw 97.7vh 0px 0.5px rgba(255,255,255,0.88), 0.48vw 0.74vh 0px 0.5px rgba(255,255,255,0.87), 51.26vw 85.22vh 0px 0.5px rgba(255,236,220,0.80),
+					2.52vw 0.02vh 0px 0.5px rgba(255,255,255,0.77), 22.59vw 45.8vh 0px 0.5px rgba(255,236,220,0.79), 47.51vw 5.47vh 2px 1px rgba(255,255,255,0.89),
+					9.82vw 52.14vh 2px 1px rgba(255,255,255,0.97), 26.57vw 0.15vh 0px 0.5px rgba(255,255,255,0.86), 64.47vw 30.79vh 2px 1px rgba(255,255,255,0.96),
+					90.11vw 1.08vh 0px 0.5px rgba(255,255,255,0.83), 6.1vw 69.6vh 0px 0.5px rgba(220,232,255,0.86), 14.44vw 9.66vh 0px 0.5px rgba(255,236,220,0.85),
+					81.15vw 7.96vh 0px 0.5px rgba(255,255,255,0.81), 88.7vw 70.13vh 2px 1px rgba(220,232,255,0.85), 74.37vw 32.97vh 2px 1px rgba(255,255,255,0.92),
+					10.77vw 12.04vh 0px 0.5px rgba(255,236,220,0.82);
+				animation: twinkle 5s ease-in-out infinite alternate;
+			}
+			.stars.twinkle-b {
+				box-shadow:
+					69.39vw 78.38vh 2px 1px rgba(255,255,255,0.89), 43.64vw 70.85vh 0px 0.5px rgba(255,236,220,0.80), 96.23vw 10.91vh 2px 1px rgba(255,255,255,0.85),
+					23.77vw 65.11vh 2px 1px rgba(255,255,255,0.96), 87.79vw 19.91vh 0px 0.5px rgba(255,236,220,0.93), 69.17vw 55.38vh 2px 1px rgba(220,232,255,0.92),
+					69.64vw 80.02vh 0px 0.5px rgba(255,255,255,0.89), 30.89vw 10.55vh 0px 0.5px rgba(220,232,255,0.77), 14.67vw 0.53vh 0px 0.5px rgba(255,255,255,0.94),
+					14.4vw 0.58vh 0px 0.5px rgba(255,236,220,0.89), 69.58vw 64.22vh 0px 0.5px rgba(255,255,255,0.87), 81.57vw 74.94vh 2px 1px rgba(220,232,255,0.86),
+					91.19vw 92.03vh 0px 0.5px rgba(255,255,255,0.79), 3.72vw 78.7vh 2px 1px rgba(220,232,255,0.95), 63.07vw 16.4vh 0px 0.5px rgba(255,236,220,0.77),
+					20.68vw 19.09vh 0px 0.5px rgba(255,255,255,0.75), 28.39vw 61.58vh 0px 0.5px rgba(220,232,255,0.81), 50.37vw 79.19vh 0px 0.5px rgba(255,255,255,0.76),
+					43.68vw 68.85vh 0px 0.5px rgba(255,255,255,0.89), 21.83vw 80.66vh 0px 0.5px rgba(255,255,255,0.91), 0.43vw 9.84vh 2px 1px rgba(255,255,255,1.00),
+					49.09vw 35.7vh 2px 1px rgba(255,255,255,0.88), 34.81vw 76.57vh 0px 0.5px rgba(255,255,255,0.94), 21.64vw 59.56vh 0px 0.5px rgba(255,236,220,0.77);
+				animation: twinkle 8s ease-in-out infinite alternate;
+				animation-delay: -3s;
+			}
+			@keyframes twinkle { from { opacity: 1; } to { opacity: 0.3; } }
+
+			.hero-header {
+				position: relative;
+				z-index: 3;
+				width: 100%;
+				max-width: 72rem;
+				display: grid;
+				grid-template-columns: minmax(0, 52rem);
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+				flex: 1 1 auto;
+			}
+			.hero-left { display: flex; flex-direction: column; align-items: center; text-align: center; }
+			/* "Please join us..." and "Please RSVP..." share one style (see .signup-note below) */
+			body.baby .hero-header h1 {
+				margin-top: 1.5vh;
+				font-family: var(--font-display);
+				font-weight: 400;
+				font-size: var(--h1-size);
+				line-height: 0.95;
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				color: var(--white);
+				text-shadow: 0 2px 18px rgba(70,50,90,0.25);
+			}
+			/* Optical spacing: the gap from "Please join us..." down to the title is
+			   1.5vh plus the type's built-in space. The date line gets the same visual gap
+			   by adding back the difference (the serif title has slightly more room above
+			   its capitals than below its baseline). */
+			body.baby .hero-left .date-line {
+				margin-top: calc(1.5vh + 0.062 * (var(--h1-size) - var(--line-size)));
+			}
+
+			/* Registry QR card */
+			.registry {
+				margin-top: 2.5rem;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 1rem;
+			}
+			.qr-card {
+				background: var(--white);
+				padding: 0.75rem;
+				border-radius: 6px;
+				line-height: 0;
+				box-shadow: 0 10px 30px rgba(60,45,90,0.25);
+			}
+			.qr-card #qrcode { width: clamp(150px, 16vw, 200px); height: clamp(150px, 16vw, 200px); }
+			.qr-card #qrcode img, .qr-card #qrcode canvas { display: block; width: 100% !important; height: 100% !important; }
+			body.baby .registry-caption {
+				font-size: 1rem;
+				font-weight: 400;
+				letter-spacing: 0.06em;
+				text-transform: uppercase;
+				text-shadow: none;
+			}
+
+			/* Pill buttons (links) */
+			body.baby .btn {
+				display: inline-block;
+				padding: 0.65rem 1.75rem;
+				font-family: var(--font-body);
+				font-size: 0.9rem;
+				font-weight: 700;
+				line-height: 1.4;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				text-align: center;
+				color: var(--ink);
+				background: var(--white);
+				border: 1px solid var(--white);
+				border-radius: 999px;
+				cursor: pointer;
+				transition: background 0.15s ease, color 0.15s ease;
+			}
+			body.baby .btn:hover, body.baby .btn:focus-visible { background: transparent; color: var(--white); }
+			body.baby .btn.ghost { background: transparent; color: var(--white); }
+			body.baby .btn.ghost:hover, body.baby .btn.ghost:focus-visible { background: var(--white); color: var(--ink); }
+
+			/* Sign up (RSVP) form */
+			body.baby .invite-line,
+			body.baby .signup-note {
+				font-family: var(--font-body);
+				font-size: var(--line-size);
+				font-weight: 300;
+				line-height: 1.4;
+				letter-spacing: 0.06em;
+				text-transform: uppercase;
+				text-shadow: 0 1px 10px rgba(70,50,90,0.3);
+			}
+			body.baby .signup-note {
+				position: relative;
+				z-index: 3;
+				margin-top: 1rem;
+			}
+			body.baby #signup-form {
+				position: relative;
+				z-index: 3;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 0.75rem;
+				width: 100%;
+				max-width: 32rem;
+				margin: 0.9rem auto 0;
+				left: auto; top: auto;
+				text-align: left;
+			}
+			body.baby #signup-form input[type="text"] {
+				flex: 1 1 0;
+				width: auto;
+				min-width: 0;
+				height: 3.2rem;
+				padding: 0 1rem;
+				border: 0;
+				border-radius: 4px;
+				background: rgba(255,255,255,0.92);
+				color: var(--ink);
+				font-family: var(--font-body);
+				font-size: 1rem;
+				letter-spacing: normal;
+				text-transform: none;
+			}
+			body.baby #signup-form input[type="text"]::placeholder { color: #6b6b8c !important; opacity: 1 !important; }
+			body.baby #signup-form input[type="text"]::-webkit-input-placeholder { color: #6b6b8c !important; opacity: 1 !important; }
+			body.baby #signup-form input[type="text"]::-moz-placeholder { color: #6b6b8c !important; opacity: 1 !important; }
+			/* The template script injects its own "Thank you!" message into the form, which
+			   pushed the fields around. The page already shows its own status line below. */
+			body.baby #signup-form .message { display: none !important; }
+			body.baby #signup-form input[type="text"] { order: 1; }
+			body.baby #signup-form input[type="submit"] { order: 2; }
+			body.baby #signup-form .plus-one { order: 3; }
+			body.baby #form-status { order: 4; }
+			body.baby #signup-form .plus-one {
+				flex: 1 1 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0;
+				font-size: 0.95rem;
+				font-weight: 400;
+				letter-spacing: 0.02em;
+				text-transform: none;
+				text-shadow: 0 1px 8px rgba(70,50,90,0.3);
+				cursor: pointer;
+			}
+			body.baby #signup-form .plus-one input[type="checkbox"] {
+				-webkit-appearance: checkbox;
+				appearance: auto;
+				position: static;
+				float: none;
+				display: inline-block;
+				opacity: 1;
+				z-index: auto;
+				width: 1.15rem;
+				height: 1.15rem;
+				margin: 0 0.6rem 0 0;
+				accent-color: #ffffff;
+				cursor: pointer;
+			}
+			body.baby #signup-form input[type="submit"] {
+				flex: 0 0 auto;
+				width: auto;
+				height: 3.2rem;
+				line-height: 1;
+				padding: 0 1.75rem;
+				border: 1px solid var(--white);
+				border-radius: 999px;
+				box-shadow: none;
+				background: transparent !important;
+				color: var(--white) !important;
+				font-family: var(--font-body);
+				font-size: 0.9rem;
+				font-weight: 700;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				cursor: pointer;
+				transition: background 0.15s ease, color 0.15s ease;
+			}
+			body.baby #signup-form input[type="submit"]:hover,
+			body.baby #signup-form input[type="submit"]:focus-visible {
+				background: var(--white) !important;
+				color: var(--ink) !important;
+			}
+			body.baby #signup-form input[type="submit"]:disabled { opacity: 0.6; cursor: wait; }
+			body.baby #form-status {
+				flex: 1 1 100%;
+				min-height: 1.7rem;
+				margin: 0;
+				text-align: center;
+				font-weight: 600;
+				text-shadow: 0 1px 8px rgba(70,50,90,0.3);
+			}
+
+			/* ---------- Hill sections ---------- */
+			/* Each hill from the first screen becomes the backdrop of a section. Its curved
+			   top edge (.wave) rises into the section above and acts as the divider. */
+			.hill-section {
+				position: relative;
+				padding: 5rem 2rem;
+				text-align: center;
+				background: var(--bg);
+				color: var(--white);
+				--rule: var(--line);
+				text-shadow: 0 1px 8px rgba(40,30,70,0.35);
+			}
+			.hill-section .wave {
+				position: absolute;
+				left: 0;
+				top: calc(-1 * var(--wave-h) + 1px);
+				width: 100%;
+				height: var(--wave-h);
+				display: block;
+				pointer-events: none;
+				z-index: 1;
+			}
+			.hill-section .wave path { fill: var(--bg); }
+			.hill-section .section-inner { position: relative; z-index: 3; max-width: 44rem; margin: 0 auto; }
+
+			.registry-section {
+				--bg: var(--hill-1); --wave-h: var(--w1);
+				--rule: rgba(42,42,64,0.45);
+				padding-bottom: calc(5rem + var(--w2));
+				color: #2a2a40;
+				text-shadow: none;
+			}
+			.date-section    { --bg: var(--hill-2); --wave-h: var(--w2); padding-bottom: calc(5rem + var(--w3)); }
+			.place-section   { --bg: var(--hill-3); --wave-h: var(--w3); --rule: rgba(28,28,46,0.5); color: #1c1c2e; text-shadow: none; }
+
+			body.baby .hill-section h2 {
+				font-family: var(--font-display);
+				font-weight: 400;
+				font-size: clamp(2rem, 5vw, 3rem);
+				line-height: 1.15;
+				color: inherit;
+			}
+			body.baby .hill-section .lead { margin-top: 0.75rem; letter-spacing: 0.04em; }
+
+			.section-icon { display: block; width: 2.6rem; height: 2.6rem; margin: 0 auto 1rem; fill: currentColor; }
+
+			.date-block {
+				margin: 2.5rem auto 0;
+				display: inline-grid;
+				grid-template-columns: auto auto;
+				align-items: center;
+				column-gap: 2rem;
+				text-align: left;
+			}
+			.date-block .day {
+				font-family: var(--font-display);
+				font-size: clamp(5rem, 14vw, 8rem);
+				line-height: 1;
+				padding-right: 2rem;
+				border-right: 1px solid var(--rule);
+			}
+			body.baby .date-block .when { font-size: 1.15rem; line-height: 1.6; }
+			.date-block .when strong { display: block; font-weight: 700; font-size: 1.3rem; letter-spacing: 0.03em; }
+			.actions { margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; text-shadow: none; }
+
+			/* Buttons on the light hill use the dark ink instead of white */
+			body.baby :is(.registry-section, .place-section) .btn { background: #2a2a40; border-color: #2a2a40; color: var(--white); }
+			body.baby :is(.registry-section, .place-section) .btn:hover, body.baby :is(.registry-section, .place-section) .btn:focus-visible { background: transparent; color: #2a2a40; }
+			body.baby :is(.registry-section, .place-section) .btn.ghost { background: transparent; color: #2a2a40; }
+			body.baby :is(.registry-section, .place-section) .btn.ghost:hover, body.baby :is(.registry-section, .place-section) .btn.ghost:focus-visible { background: #2a2a40; color: var(--white); }
+
+			body.baby .place-name { margin-top: 2rem; font-family: var(--font-display); font-size: 1.6rem; line-height: 1.3; }
+			body.baby .place-room { margin-top: 0.25rem; font-size: 1.1rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+			body.baby .place-address { margin-top: 0.25rem; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+			.map-frame { margin: 2.5rem auto 0; border: 1px solid var(--rule); padding: 0.5rem; line-height: 0; }
+			.map-frame iframe { width: 100%; height: 20rem; border: 0; display: block; filter: saturate(0.8); }
+
+			/* ---------- Small screens ---------- */
+			@media screen and (max-width: 736px) {
+				:root { --w1: 4.5rem; --w2: 5rem; --w3: 4rem; --w4: 2rem; }
+				.hero { --h1-size: clamp(3.4rem, min(20vw, 12vh), 7rem); padding: 2rem 1.25rem calc(var(--w1) + 2rem); }
+				.hero::before { top: 0.75rem; right: 0.75rem; bottom: calc(var(--w1) + 0.75rem); left: 0.75rem; }
+				.hero-header { grid-template-columns: 1fr; row-gap: 2vh; }
+				
+				.qr-card #qrcode { width: 160px; height: 160px; }
+				.registry { margin-top: 2rem; }
+				body.baby .btn { padding: 0.6rem 1.4rem; font-size: 0.8rem; }
+
+				.hill-section { padding: 4rem 1.25rem; }
+				.registry-section { padding-bottom: calc(4rem + var(--w2)); }
+				.date-section { padding-bottom: calc(4rem + var(--w3)); }
+				.place-section { padding-bottom: 4rem; }
+					.date-block { grid-template-columns: 1fr; row-gap: 1rem; text-align: center; }
+				.date-block .day { padding-right: 0; border-right: 0; }
+				.map-frame iframe { height: 16rem; }
+			}
+
+			@media (prefers-reduced-motion: reduce) {
+				html { scroll-behavior: auto; }
+				.stars.twinkle-a, .stars.twinkle-b { animation: none; }
+				* { transition: none !important; }
+			}
+		</style>
+	</head>
+	<body class="baby is-preload">
+
+		<!-- First screen -->
+			<div class="hero" id="welcome">
+				<div class="sky" aria-hidden="true">
+					<div class="stars"></div>
+					<div class="stars twinkle-a"></div>
+					<div class="stars twinkle-b"></div>
+				</div>
+
+				<!-- Header -->
+					<header class="hero-header">
+						<div class="hero-left">
+							<p class="invite-line">Please join us for a co-ed</p>
+							<h1>Baby<br />Shower</h1>
+							<p class="invite-line date-line">November 22, 2026<br />3:00 - 5:00 PM</p>
+						</div>
+					</header>
+
+				<!-- Signup Form -->
+					<p class="signup-note">RSVP by November 5th</p>
+					<form id="signup-form" method="post" action="#">
+						<input type="text" name="name" id="name" placeholder="Your Name" aria-label="Your name" autocomplete="name" required />
+						<input type="submit" value="Register" />
+						<label class="plus-one" for="plusOne">
+							<input type="checkbox" name="plusOne" id="plusOne" />
+							<span>I'm bringing an additional guest</span>
+						</label>
+						<p id="form-status" role="status" aria-live="polite"></p>
+					</form>
+			</div>
+
+		<!-- Registry (hill 1) -->
+			<section class="hill-section registry-section" aria-labelledby="registry-title">
+				<svg class="wave" viewBox="0 100 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 160 C 240 110, 420 120, 640 150 C 860 180, 1100 200, 1440 120 L1440 360 L0 360 Z"/></svg>
+				<div class="section-inner">
+					<svg class="section-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7h-2.2c.13-.3.2-.64.2-1a3 3 0 0 0-3-3c-1.3 0-2.4.8-3 2-.6-1.2-1.7-2-3-2a3 3 0 0 0-3 3c0 .36.07.7.2 1H4a2 2 0 0 0-2 2v3h20V9a2 2 0 0 0-2-2zM9 7a1 1 0 1 1 0-2c.6 0 1.3.9 1.7 2H9zm6 0h-1.7c.4-1.1 1.1-2 1.7-2a1 1 0 1 1 0 2zM3 14v6a2 2 0 0 0 2 2h6v-8H3zm10 0v8h6a2 2 0 0 0 2-2v-6h-8z"/></svg>
+					<h2 id="registry-title">Gift registry</h2>
+					<p class="lead">Scan the code or use the button to view our registry.</p>
+					<div class="registry" id="registry">
+						<div class="qr-card">
+							<div id="qrcode" role="img" aria-label="QR code linking to the gift registry"></div>
+						</div>
+						<a class="btn ghost" id="registry-link" href="#" target="_blank" rel="noopener">Registry</a>
+					</div>
+				</div>
+			</section>
+
+		<!-- Date (hill 2) -->
+			<section class="hill-section date-section" id="date" aria-labelledby="date-title">
+				<svg class="wave" viewBox="0 95 1440 135" preserveAspectRatio="none" aria-hidden="true"><path d="M0 230 C 200 210, 380 190, 560 200 C 760 212, 880 120, 1060 110 C 1220 102, 1340 120, 1440 140 L1440 360 L0 360 Z"/></svg>
+				<div class="section-inner">
+					<svg class="section-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 1.5a1.5 1.5 0 0 1 1.5 1.5v1h7V3A1.5 1.5 0 0 1 17 3v1h1.5A3.5 3.5 0 0 1 22 7.5v11a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 18.5v-11A3.5 3.5 0 0 1 5.5 4H6V3A1.5 1.5 0 0 1 7.5 1.5zM5 10v8.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V10zm3.5 3h3v3h-3z"/></svg>
+					<h2 id="date-title">Save the date</h2>
+					<p class="lead">Come celebrate with us.</p>
+					<div class="date-block">
+						<div class="day" aria-hidden="true">22</div>
+						<p class="when">
+							<strong>Sunday, November 22, 2026</strong>
+							3:00 - 5:00 PM
+						</p>
+					</div>
+					<div class="actions">
+						<a class="btn" id="calendar-link" href="#" target="_blank" rel="noopener">Add to calendar</a>
+					</div>
+
+				</div>
+			</section>
+
+		<!-- Location (hill 3) -->
+			<section class="hill-section place-section" id="location" aria-labelledby="location-title">
+				<svg class="wave" viewBox="0 240 1440 55" preserveAspectRatio="none" aria-hidden="true"><path d="M0 290 C 220 250, 420 270, 640 280 C 880 292, 1100 230, 1440 270 L1440 360 L0 360 Z"/></svg>
+				<div class="section-inner">
+					<svg class="section-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+					<h2 id="location-title">Where to find us</h2>
+					<p class="place-name">Orchards Club House</p>
+					<p class="place-room">Crabapple Room</p>
+					<p class="place-address">4059 Orchards Drive SW</p>
+					<div class="map-frame">
+						<iframe id="map-embed" title="Map showing the Orchards Club House" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="actions">
+						<a class="btn" id="directions-link" href="#" target="_blank" rel="noopener">Get directions</a>
+					</div>
+				</div>
+			</section>
+
+		<!-- QR code library (cdnjs) -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+			<script>
+				/* =====================================================
+				   EDIT THESE THREE VALUES
+				   ===================================================== */
+				// 1. Link to the gift registry (the QR code is generated from this).
+				const REGISTRY_URL = "https://tinyurl.com/8fk75h7k";
+
+				// 2. Web app URL from the NEW Google Apps Script (see rsvp-apps-script.gs).
+				const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzACLO5j9vzcIiEe5XmnycflctdmD5adErjehadwCtkFzsXTb0hDmZZyHEi5O59BpLJhw/exec";
+
+				// 3. Address used for the map, directions, and calendar entry.
+				const MAP_QUERY = "Orchards Club House, 4059 Orchards Drive SW, Edmonton, AB";
+				/* ===================================================== */
+
+				/* ---------- Registry QR code ---------- */
+				document.getElementById("registry-link").href = REGISTRY_URL;
+				const qrEl = document.getElementById("qrcode");
+				if (typeof QRCode !== "undefined") {
+					new QRCode(qrEl, {
+						text: REGISTRY_URL,
+						width: 360,
+						height: 360,
+						colorDark: "#43445f",
+						colorLight: "#ffffff",
+						correctLevel: QRCode.CorrectLevel.M
+					});
+				} else {
+					// If the library can't load, the Registry button still works.
+					qrEl.parentElement.style.display = "none";
+				}
+
+				/* ---------- Map, directions, calendar ---------- */
+				const q = encodeURIComponent(MAP_QUERY);
+				document.getElementById("map-embed").src = "https://www.google.com/maps?q=" + q + "&output=embed";
+				document.getElementById("directions-link").href = "https://www.google.com/maps/search/?api=1&query=" + q;
+				document.getElementById("calendar-link").href =
+					"https://calendar.google.com/calendar/render?action=TEMPLATE" +
+					"&text=" + encodeURIComponent("Co-ed Baby Shower") +
+					"&dates=20261122T150000/20261122T170000" +
+					"&ctz=America/Edmonton" +
+					"&location=" + q +
+					"&details=" + encodeURIComponent("Crabapple Room. RSVP by November 5th.");
+
+				/* ---------- Registration form ---------- */
+				document.getElementById("signup-form").addEventListener("submit", async (e) => {
+					e.preventDefault();
+					const status = document.getElementById("form-status");
+					status.textContent = "Sending...";
+
+					const payload = {
+						name:    document.getElementById("name").value.trim(),
+						plusOne: document.getElementById("plusOne").checked,
+					};
+
+					try {
+						// Google Apps Script requires no-cors mode
+						await fetch(SCRIPT_URL, {
+							method: "POST",
+							mode: "no-cors",
+							headers: { "Content-Type": "application/json" },
+							body: JSON.stringify(payload),
+						});
+
+						status.textContent = "Thanks! You're registered.";
+						e.target.reset();
+					} catch (err) {
+						status.textContent = "Something went wrong. Please try again.";
+						console.error(err);
+					}
+				});
+			</script>
+
+		<!-- Scripts -->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
