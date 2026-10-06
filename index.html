@@ -240,6 +240,9 @@
 				margin-top: calc(1.5vh + 0.062 * (var(--h1-size) - var(--line-size)));
 			}
 
+			/* Each line is its own block, so it breaks the same way on every screen */
+			.hero-left .line { display: block; }
+
 			/* Registry QR card */
 			.registry {
 				margin-top: 2.5rem;
@@ -306,22 +309,22 @@
 			body.baby #signup-form {
 				position: relative;
 				z-index: 3;
-				display: flex;
-				flex-wrap: wrap;
+				display: flex !important;
+				flex-wrap: wrap !important;
 				justify-content: center;
 				gap: 0.75rem;
-				width: 100%;
-				max-width: 32rem;
+				width: 100% !important;
+				max-width: 32rem !important;
 				margin: 0.9rem auto 0;
 				left: auto; top: auto;
 				text-align: left;
 			}
 			body.baby #signup-form input[type="text"] {
-				flex: 1 1 0;
-				width: auto;
-				min-width: 0;
-				height: 3.2rem;
-				padding: 0 1rem;
+				flex: 1 1 0 !important;
+				width: auto !important;
+				min-width: 0 !important;
+				height: 3.2rem !important;
+				padding: 0 1rem !important;
 				border: 0;
 				border-radius: 4px;
 				background: rgba(255,255,255,0.92);
@@ -337,6 +340,8 @@
 			/* The template script injects its own "Thank you!" message into the form, which
 			   pushed the fields around. The page already shows its own status line below. */
 			body.baby #signup-form .message { display: none !important; }
+			body.baby #signup-form { flex-direction: row !important; }
+			body.baby #signup-form input[type="text"], body.baby #signup-form input[type="submit"] { margin: 0 !important; }
 			body.baby #signup-form input[type="text"] { order: 1; }
 			body.baby #signup-form input[type="submit"] { order: 2; }
 			body.baby #signup-form .plus-one { order: 3; }
@@ -482,7 +487,7 @@
 			/* ---------- Small screens ---------- */
 			@media screen and (max-width: 736px) {
 				:root { --w1: 4.5rem; --w2: 5rem; --w3: 4rem; --w4: 2rem; }
-				.hero { --h1-size: clamp(3.4rem, min(20vw, 12vh), 7rem); padding: 2rem 1.25rem calc(var(--w1) + 2rem); }
+				.hero { --h1-size: clamp(3rem, min(17vw, 12vh), 7rem); padding: 2rem 1.25rem calc(var(--w1) + 2rem); }
 				.hero::before { top: 0.75rem; right: 0.75rem; bottom: calc(var(--w1) + 0.75rem); left: 0.75rem; }
 				.hero-header { grid-template-columns: 1fr; row-gap: 2vh; }
 				
@@ -520,8 +525,8 @@
 					<header class="hero-header">
 						<div class="hero-left">
 							<p class="invite-line">Please join us for a co-ed</p>
-							<h1>Baby<br />Shower</h1>
-							<p class="invite-line date-line">November 22, 2026<br />3:00 - 5:00 PM</p>
+							<h1><span class="line">Baby</span> <span class="line">Shower</span></h1>
+							<p class="invite-line date-line"><span class="line">November 22, 2026</span> <span class="line">3:00 - 5:00 PM</span></p>
 						</div>
 					</header>
 
@@ -549,6 +554,7 @@
 						<div class="qr-card">
 							<div id="qrcode" role="img" aria-label="QR code linking to the gift registry"></div>
 						</div>
+						<p class="registry-caption">Scan to view our registry</p>
 						<a class="btn ghost" id="registry-link" href="#" target="_blank" rel="noopener">Registry</a>
 					</div>
 				</div>
@@ -604,7 +610,7 @@
 				const REGISTRY_URL = "https://tinyurl.com/8fk75h7k";
 
 				// 2. Web app URL from the NEW Google Apps Script (see rsvp-apps-script.gs).
-				const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzACLO5j9vzcIiEe5XmnycflctdmD5adErjehadwCtkFzsXTb0hDmZZyHEi5O59BpLJhw/exec";
+				const SCRIPT_URL = "PASTE_YOUR_NEW_APPS_SCRIPT_WEB_APP_URL_HERE";
 
 				// 3. Address used for the map, directions, and calendar entry.
 				const MAP_QUERY = "Orchards Club House, 4059 Orchards Drive SW, Edmonton, AB";
